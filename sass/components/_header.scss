@@ -1,0 +1,80 @@
+.section.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.container.nav{
+    display: flex;
+    align-items: center;
+}
+.webstudio {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    span {
+        color: var(--accent-color);
+}
+
+    .black {
+        color:var(--primary-text-color);
+}
+}
+nav {
+    margin-left: 93px;
+}
+
+.nav-list {
+    display: flex;
+}
+.nav-item:not(:first-child) {
+    margin-left: 54px;
+}
+.nav-link,
+.contact-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-text-color);
+}
+.webstudio:hover,
+.nav-link:hover,
+.nav-link:focus,
+.contact-item:hover .contact-link,
+.contact-item:focus .contact-link,
+.contact-item:focus .icon-mail,
+.contact-item:hover .icon-mail,
+.contact-item:hover .icon-phone,
+.contact-item:focus .icon-phone {
+    color: var(--accent-color);
+}
+
+.contacts-list{
+    display: flex;
+    margin-left: auto;
+}
+.contact-link{
+    color: var(--secondary-text-color);
+}
+
+.icon-mail,
+.icon-phone {
+    cursor: pointer;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-phone {
+    margin-left: 30px;
+    width: 10px;
+    height: 16px;
+}
+.icon-mail {
+    width: 16px;
+    height: 12px;
+}
