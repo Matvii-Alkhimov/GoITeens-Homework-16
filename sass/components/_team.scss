@@ -1,5 +1,30 @@
 .team.section {
     background: #F5F4FA;
+
+    @media screen and (min-width: $mobile) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    @media screen and (min-width: $tablet) {
+        padding-top: 66px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.team h2 {
+
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 h3+p {
     font-family: 'Roboto';
@@ -11,27 +36,61 @@ h3+p {
     color:var(--secondary-text-color);
 }
 .team-list {
-    display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 94px;
+    
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 738px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--thirdly-text-color);
-    width: 270px;
-    &:not(:last-of-type) {
-        margin-right: 30px;
-}
-}
 
+    @media screen and (min-width: $mobile) {
+        width: 100%;
+        height: 622px;
+    }
+    @media screen and (min-width: $tablet) {
+        width: calc( ( 100% - 4 * 15px ) / 2 );
+        margin: 15px;
+        height: 536px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc( ( 100% - 4 * 30px ) / 4 );
+        margin: 15px;
+        height: 536px;
+        height: 428px;
+    }
+}
+.team-item:not(:last-of-type) {
+    @media screen and (min-width: $mobile) {
+    margin-bottom: 30px;
+}
+}
 %team-content {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
 }
 .team-title {
     height: 19px;
+    width: 170px;
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -49,16 +108,29 @@ h3+p {
 .team-image {
     display: block;
 
+    @media screen and (min-width: $mobile) {
+        height: 460px;
+    }
+    @media screen and (min-width: $tablet) {
+        height: 374px;
+        width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+        height: 260px;
+        width: 100%;
+    }
 }
 .icons-list {
     height: 44px;
     width: 206px;
     background-color: var(--thirdly-text-color);
     display: flex;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-bottom: 30px;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 24px;
+    }
 }
 .icon-item {
     width: 44px;

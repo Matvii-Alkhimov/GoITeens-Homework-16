@@ -10,12 +10,14 @@
     @media screen and (min-width: $desktop) {
     justify-content: space-between;
 }
-
 }
 .fetures-item {
     @media screen and (min-width:$tablet) {
     margin: 15px;
     width: calc( ( 100% - 30px*2) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+        width: 270px;
     }
 }
 .fetures-item:not(:last-of-type) {
